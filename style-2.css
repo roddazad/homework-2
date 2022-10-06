@@ -1,0 +1,136 @@
+body{
+    margin:10px;
+    background-image:url(./images/henrique-hanemann-Ha4Mrwo04C8-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.header-box{
+    margin: auto;
+    width: 75%;
+    
+    border-radius: 20px;
+    
+}
+.heading{
+    background: linear-gradient(90deg, rgb(55, 21, 9) 0%, rgb(3, 82, 122) 35%, rgb(235, 235, 242) 100%);
+    border: 3px solid rgb(22, 2, 2);
+    border-radius: 20px;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.nav-bar{
+    background-color: rgb(22, 10, 73);
+    border: 3px solid rgb(221, 204, 204);
+    border-radius: 20px;
+    color: whitesmoke;
+    padding: 20px;
+}
+.nav-bar nav li a{
+    color:rgb(221, 204, 204);
+    font-size: 1.1rem;
+}
+.nav-bar nav li a:hover{
+    color: gray;
+    
+}
+.nav-bar nav li a:focus{
+    border: 3px solid brown;
+}
+.nav-bar nav li{
+    list-style-type: none;
+    margin-right: 10px;
+    display: inline;
+}
+.img-box{
+    width: 50%;
+    margin: auto;
+    border: 3px solid lightgray;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    align-content:space-between;
+    
+    
+}
+.project-box{
+    width: 30%;
+    height: 500px;
+    border: 3px solid lightgray;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+.project-box-about{
+    width: 75%;
+    margin: auto;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 3px solid lightgray;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:space-around;
+    box-sizing: border-box;
+}
+img{
+    with: 200px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    
+   
+}
+.main-box{
+    width:100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.project-box a p {
+    font-size: 40px;;
+}
+.footer-bar{
+    margin-top: 500px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.back-to-top{
+    width:120px;
+    
+    background-color:rgb(3, 82, 122);
+    border-radius: 25px;
+    position: fixed;
+    bottom: 10px;
+    right:0%;
+    display:flex;
+    justify-content: center;
+    
+}   
+.back-to-top p a{
+    color:rgb(221, 204, 204);
+    font-size: 1.1rem;
+}
