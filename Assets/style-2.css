@@ -1,74 +1,64 @@
 body{
     margin:10px;
-    background-image:url(./images/henrique-hanemann-Ha4Mrwo04C8-unsplash.jpg);
+    background-color: black;
     background-size: cover;
     position: relative;
     
 }
-
-.header-box{
-    margin: auto;
-    width: 75%;
-    border-radius: 20px;
-}
-.heading{
-    background: linear-gradient(90deg, rgb(55, 21, 9) 0%, rgb(3, 82, 122) 35%, rgb(235, 235, 242) 100%);
-    border: 3px solid rgb(221, 204, 204);
-    border-radius: 20px;
-    color: whitesmoke;
-    padding: 20px;
-    text-align: center;
-}
-.nav-bar{
-    background-color: rgb(22, 10, 73);
-    border: 3px solid rgb(221, 204, 204);
-    border-radius: 20px;
-    color: whitesmoke;
-    padding: 20px;
-}
-.nav-bar nav li a{
-    color:rgb(221, 204, 204);
-    font-size: 1.1rem;
-}
-.nav-bar nav li a:hover{
-    color: gray;
-    
-}
-.nav-bar nav li a:focus{
-    border: 3px solid rgb(234, 214, 214);
-}
-.nav-bar nav li{
+nav li{
+    margin-right : 10px;
     list-style-type: none;
-    margin-right: 10px;
     display: inline-block;
 }
+img{
+    width: auto;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
 .img-box{
-    width: 50%;
-    margin: auto;
-    border: 3px solid rgb(221, 204, 204);
-    background-color: antiquewhite;
-    border-radius: 20px;
+    background-color: rgb(22, 10, 73);
+    color: whitesmoke;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
-    align-content:space-between;
+    align-content:flex-start;
+    grid-row: 1/span 3;
+    grid-column: 1/2;
 }
-.project-box{
-    width: 30%;
-    height: 500px;
-    border: 3px solid lightgray;
-    background-color: antiquewhite;
+li a{
+    margin-right : 10px;
+    color:rgb(221, 204, 204);
+    font-size: 1.1rem;
+    
+}
+li a:hover{
+    color: gray;
+    
+}
+li a:focus{
+    border: 3px solid rgb(234, 214, 214);
+}
+.header{
+    background: linear-gradient(90deg, rgb(55, 21, 9) 0%, rgb(3, 82, 122) 35%, rgb(235, 235, 242) 100%);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.border{
+    border: 3px; solid rgb(221, 204, 204);
     border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content:space-around;
+
+}
+.bar{
+    background-color: rgb(22, 10, 73);
+    border-radius: 20px;
+    color: whitesmoke;
+    padding: 20px;
 }
 .project-box-about{
     width: 75%;
@@ -76,9 +66,7 @@ body{
     padding: 50px;
     font-size: 20px;
     line-height: 30px;
-    border: 3px solid lightgray;
     background-color: antiquewhite;
-    border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,38 +75,28 @@ body{
     align-content:space-around;
     box-sizing: border-box;
 }
-img{
-    with: 200px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 10px;
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height:100vh;
+    display: grid;
+    grid-template: auto auto auto / 250px auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
 }
-.main-box{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-.project-box a p {
+.box a p{
     font-size:auto; 
-}
-.footer-bar{
-    width:75%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
+    color:azure;
+    margin: 30px;
+    font-size:larger;
 }
 .back-to-top{
     width:120px;
     background-color:rgb(3, 82, 122);
     border-radius: 25px;
     position: fixed;
-    bottom: 10px;
-    right:0%;
+    bottom: 70px;
+    right:10px;
     display:flex;
     justify-content: center;
 }   
@@ -126,12 +104,27 @@ img{
     color:rgb(221, 204, 204);
     font-size: 1.1rem;
 }
-.empty-space{
-    width: 100%;
-    height: 400px;
+.box{
+    
+    background-color: antiquewhite;
 }
+.project1{
+    background-image:url("./images/Project1.jpg");
+    background-size: cover;
+    grid-row: 1/span 2;
+    grid-column: 2/ span 2;
+}
+.project2{
+    background-image: url("./images/project2.jpg");
+    background-size:cover;
+}
+.project3{
+    background-image: url("./images/project3.jpg");
+    background-size:cover;
+}
+
 @media screen and (max-width: 680px) {
-    .nav-bar{
+    .bar{
         background-color: rgb(63, 23, 7);
         border: 3px solid rgb(221, 204, 204);
         border-radius: 20px;
@@ -144,6 +137,13 @@ img{
         border-radius: 50%;
         object-fit: cover;
         margin: 5px;
+}
+    .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
 }
     .project-box-about{
         width: 75%;
@@ -160,21 +160,41 @@ img{
         align-items: center;
         flex-wrap: wrap;
         align-content:space-around;
-        
 }
-    .project-box{
-        width: 30%;
-        height: 200px;
-        border: 3px solid lightgray;
-        background-color: rgb(230, 167, 85);
-        border-radius: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
+    .img-box{
+        background-color: rgb(63, 23, 7);
+        color: whitesmoke;
+        padding: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        align-content:space-around;
-}
+        flex-wrap:wrap;
+        align-content:flex-start;    
+    }
+    .project1{
+        background-image:url("./images/Project1.jpg");
+        background-size: cover;
+        height: 300px;
+    }
+    .project2{
+        background-image: url("./images/project2.jpg");
+        background-size:cover;
+        height:300px;
+    }
+    .project3{
+        background-image: url("./images/project3.jpg");
+        background-size:cover;
+        height: 300px;
+    }
+    .back-to-top{
+        width:120px;
+        background-color:brown;
+        border-radius: 25px;
+        position: fixed;
+        bottom: 70px;
+        right:10px;
+        display:flex;
+        justify-content: center;
+    } 
 }
